@@ -5,8 +5,8 @@ import (
 )
 
 func TestCrypt(t *testing.T) {
-	stored := "K.kG5h6z2d2Ms"
-	crypted := Crypt("datchandjjjjjjj", stored[:2])
+	stored := "us8yT8zzfb8Jg"
+	crypted := Crypt("passsample", stored[:2])
 
 	if stored != crypted {
 		t.Fatal("crypted value not match", stored, crypted)
